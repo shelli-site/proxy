@@ -1,0 +1,2 @@
+# proxy
+serverchan proxy gotify
