@@ -26,7 +26,7 @@ public class Server2GotifyController {
                                      @RequestParam("desp") String desp,
                                      @RequestParam("proxyUrl") String proxyUrl) {
         GotifyBody gotifyBody = GotifyBody.builder().title(title)
-                .message(desp).priority("10")
+                .message(desp).priority(10)
                 .extras(new GotifyBody.Extra("text/markdown", null, null)).build();
         String url = proxyUrl + "?token=" + token;
         String s = restTemplate.postForObject(url, gotifyBody, String.class);

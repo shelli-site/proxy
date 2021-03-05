@@ -18,7 +18,7 @@ import java.util.Map;
 public class GotifyBody {
     private String title;
     private String message;
-    private String priority;
+    private Integer priority;
     private Extra extras;
 
     @Getter
